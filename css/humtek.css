@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+/* Comany header css from line 6 to 53 */
+
+.container-fluids {
+    background: linear-gradient(rgba(205, 170, 170, 0.5), rgba(205, 170, 170, 0.5)), url(../models/successfull.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.container-fluids h1{
+    font-family:  Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+}
+#logo{
+    display: none;
+}
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(19, 18, 18);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.company-contact i {
+    font-size: 25px;
+    color: rgb(5, 5, 5);
+}
+
+.company-contact a {
+    text-decoration: none;
+    color: rgb(22, 21, 21);
+    transition: transform .3s ease, color 0.2s ease-in, font-size 0.5s ease-in, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background: transparent;
+}
+.company-contact a:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(0.9);
+    box-shadow: 0 0 8px rgb(247, 248, 248), 0 0 16px rgb(243, 245, 245), 0 0 37px rgb(252, 255, 255), 0 0 75px rgb(247, 250, 250), 0 0 150px rgb(251, 253, 253);
+}
+.company-social {
+    font-size: 25px;
+    color: white;
+}
+
+.company-social a i {
+    color: black;
+    transition: transform .3s ease, color 0.2s ease-in, font-size 0.5s ease-in, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.company-social a i:hover {
+    transform: scale(1.3);
+    color: white;
+}
+
+/* Compnay navbar css */
+nav {
+    height: 80px;
+    width: 100%;
+
+}
+.logoo{
+    color: white;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    float: left;
+    margin: 10px 5px;
+
+}
+
+nav ul{
+    float: right;
+    margin: 20px 5px;
+}
+
+nav ul li{
+    display:inline-block ;
+    margin-inline: 13px;
+    font-size: 20px;
+    transition: transform 0.5s ease;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:hover{
+    transform: scale(1.1);
+}
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    line-height: 70px;
+}
+#checkit{
+    display: none;
+}
+
+/* main-child css */
+.main-child .h3 {
+    font-size: 1.5em;
+}
+
+.h3 {
+    width: fit-content;
+    transition: all .5s .2s;
+}
+
+.h3:hover {
+    transform: scale(1.1);
+}
+
+.quote-child {
+    border: 1px solid white;
+    width: auto;
+    backdrop-filter: blur(1px);
+    transition: all 2s 2s;
+}
+  .login-button button{
+    display: none;
+  }
+/*================================================ section css =================================================*/
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background:url(../models/handshake-4011419_1280.jpg), no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.section {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.section-child1 {
+    width: fit-content;
+    background: linear-gradient(rgba(97, 87, 87, 0.5), rgba(97, 87, 87, 0.5));
+}
+.section-child1 {
+    box-sizing: border-box;
+    font-size: 20px;
+    height: 350px;
+    backdrop-filter: blur(1px);
+    width: fit-content;
+}
+.section-child1 p{
+    color: white;
+}
+.section-kind {
+    height: 350px;
+}
+
+.section-child2 {
+    box-sizing: border-box;
+    font-size: 1.3em;
+    height: 350px;
+    box-shadow: 0 0 35px rgba(198, 199, 201, 0.966);
+    width: fit-content;
+    background: linear-gradient(rgba(97, 87, 87, 0.5), rgba(97, 87, 87, 0.5));
+    backdrop-filter: blur(2px);
+}
+
+.kind {
+    padding: 1em;
+    font-weight: 600;
+}
+
+.kind h3 {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.kind p {
+    font-weight: 400;
+}
+
+.kind h3 i {
+    font-size: 2.7rem;
+}
+
+/* ======Flickity Carousell */
+
+.carousel {
+    margin-top: 1rem;
+    border-radius: 20px;
+}
+
+.carousel-cell {
+  width: 60%;
+  height: 200px;
+  margin-inline: 1px;
+  background-color: #0a2b3a;
+  border-radius: 50px;
+  counter-increment: carousel-cell;
+  box-sizing: border-box;
+}
+
+/* cell number */
+.carousel-cell a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: #EEE;
+}
+.carousel-cell a:hover{
+    color: #6274a3;
+}
+
+.carousel-cell button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 40px;
+    color: white;
+    
+}
+/* ===================================Models CSS======================================= */
+#carousel-cell h1{
+    margin-top: 0.8rem;
+    font-size: 15px;
+    font-weight: 800;
+}
+#carousel-cell {
+    width: 80%;
+    height: 280px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-inline: 8px;
+}
+
+#carousel-cell img{
+    width: 290px;
+    height: 80%;
+}
+
+
+/*=======================================CashCounting button CSS=====================================  */
+
+.cash-counting,
+.strapping-machine,
+.shrink-wrape,
+.stuffing-machine,
+.bundle-binding,
+.cash-binding,
+.uv-lamp,
+.sami-automatic,
+.loseValue-counter{
+    background-color: #053850;
+    border-radius: 4rem; 
+    text-align: justify;
+    color: white;
+}
+.cash-counting .col-md-6 ol li,
+.strapping-machine .col-md-6 ol li,
+.shrink-wrape .col-md-6 ol li,
+.stuffing-machine .col-md-6 ol li,
+.bundle-binding .col-md-6 ol li,
+.cash-binding .col-md-6 ol li,
+.uv-lamp .col-md-6 ol li,
+.sami-automatic .col-md-6 ol li,
+.loseValue-counter .col-md-6 ol li{
+    margin-top: 25px;
+    font-size: medium;
+}
+.cash-counting img,
+.strapping-machine img,
+.shrink-wrape img,
+.stuffing-machine img,
+.bundle-binding img,
+.cash-binding img,
+.uv-lamp img,
+.sami-automatic img,
+.loseValue-counter img{
+    transition: all 0.5s ease;
+    width: 300px;
+    margin-left: 2rem;
+}
+.cash-counting img:hover,
+.strapping-machine img:hover,
+.shrink-wrape img:hover,
+.stuffing-machine img:hover,
+.bundle-binding img:hover,
+.cash-binding img:hover,
+.uv-lamp img:hover,
+.sami-automatic img:hover,
+.loseValue-counter img:hover{
+    border-radius: 30px;
+    transform: scale(0.9);
+}
+
+.cash-counting .closebutton,
+.strapping-machine .closebutton,
+.shrink-wrape .closebutton,
+.stuffing-machine .closebutton,
+.bundle-binding .closebutton,
+.cash-binding .closebutton,
+.uv-lamp .closebutton,
+.sami-automatic .closebutton,
+.loseValue-counter .closebutton{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: transparent;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid white;
+    height: 40px;
+    width: 40px;
+}
+/* =============Cash Counting Js CSS ======================== */
+
+.cashcount.show::before,
+.strapp.show::before,
+.shrink.show::before,
+.stuffing.show::before,
+.binding.show::before,
+.bindingCash.show::before,
+.uv.show::before,
+.sami.show::before,
+.loseValue.show::before {
+    opacity: 1;
+    pointer-events: auto;
+}
+.cash-counting,
+.strapping-machine,
+.shrink-wrape,
+.stuffing-machine,
+.bundle-binding,
+.cash-binding,
+.uv-lamp,
+.sami-automatic,
+.loseValue-counter{
+    position: absolute;
+    top: 78.5rem;
+    left:50%;
+    width: 390px;
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: 101;
+    padding: 25px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+}
+.cashcount.show .cash-counting,
+.strapp.show .strapping-machine,
+.shrink.show .shrink-wrape,
+.stuffing.show .stuffing-machine,
+.binding.show .bundle-binding,
+.bindingCash.show .cash-binding,
+.uv.show .uv-lamp,
+.sami.show .sami-automatic,
+.loseValue.show .loseValue-counter{
+    pointer-events: auto;
+    opacity: 1;
+    width: 85%;
+    transform:  translate(-50%,-50%) scale(1);
+}
+
+    .binder,
+    .billValue,
+    .shuffingMailing,
+    .samiauto,
+    .notebinde,
+    .uv,
+    .shrinkwraperr,
+    .vaccum{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .samistrapping{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .orderlist {
+        margin-top: 3rem;
+    }
+
+    /* ===========order============= */
+    .order {
+        margin: 10px;
+        padding: 10px;
+        background-color: #121e3f;
+        border-radius: 20px;
+    }
+    
+    .order .btnservicesRow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .order .col-md-12 .btnservicesRow .btnservices {
+        width: 96%;
+        margin-top: 20px;
+    }
+    
+    .order form input {
+        border: transparent;
+    }
+/* ==================================================   contact-area    =============================================== */
+.contact-area {
+    background-color: #0a2b3a;
+    color: white;
+    font-weight: 600;
+    font-style: oblique;
+    padding-bottom: 20px;
+    margin-top: 2em;
+    padding-bottom: 70px;
+}
+
+.contact-area form {
+    margin-top: 1.5rem;
+}
+
+.contact-area form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid rgb(92, 73, 73);
+}
+
+#name,#email{
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: lightslategray;
+    font-size: large;
+    font-weight: 400;
+}
+
+.contact-area form .row2 {
+    margin-top: 20px;
+}
+
+.contact-area form .form-select {
+    border-radius: 8px;
+}
+
+
+.contact-area .row2 select {
+    border: 1px solid black;
+}
+
+.contact-area form .form-group textarea {
+    border-radius: 20px;
+}
+/* ============================================================ footer =========================================================== */
+.footer {
+    background-color: #121e3f;
+    color: white;
+}
+
+.col-footer li{
+    list-style-type: circle;
+}
+.footer li{
+    list-style-type: circle;
+    width: 100%;
+    font-size: small;
+}
+.footer a{
+    color: white;
+}
+.col-footer-loc .footNav a{
+    width: 80%;
+    margin: 1px 0;
+}
+.col-footer-loc .footNav a:hover{
+    color: rgb(31, 205, 228);
+}
+
+.col-footer-loc .footer-location .nav-link:hover{
+    color: rgb(31, 205, 228);
+}
+.footer .footer-location i {
+    font-size: 15px;
+    margin-right: 5px;
+}
+.col-footer-social li a{
+    font-size: x-small;
+    text-decoration: none;
+    transition: all .5s ease-in;
+}
+ .col-footer-social li a:hover{
+    transform: scale(1.1);
+}
+.col-footer-social a i{
+    margin-top: 10px;
+    transition: transform .5s ease;
+    font-size: 15px;
+}
+.col-footer-social a i:hover{
+    transform: scale(1.2);
+}
+.copyright { background-color: black; color: white; }
+.copyright .webfooter{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}

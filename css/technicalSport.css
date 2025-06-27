@@ -1,0 +1,183 @@
+.Humtek-Technical{
+    background: linear-gradient(rgba(205, 170, 170, 0.5), rgba(205, 170, 170, 0.5)), url(../models/successfull.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.Humtek-Technical a{
+    text-decoration: none;
+    color: black;
+    font-family: impact;
+}
+.Humtek-Technical a:hover{
+    color: black;
+}
+
+.Support{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(rgba(205, 170, 170, 0.5), rgba(205, 170, 170, 0.5)), url(../models/handshake-4011419_1280.jpg) no-repeat;
+    background-size: cover;
+}
+.Support h2{
+    font-weight: 900;
+    margin: 15px 0;
+}
+
+.Support a{
+    color: #0a2b3a;
+    text-decoration: none;
+}
+
+.Support a:hover{
+    border-bottom: 2px solid #0a2b3a;
+}
+.Support i{
+    font-size: 20px;
+}
+
+.solutions {
+    margin-top: 20px;
+}
+.solutions p{
+    font-size: larger;
+    font-weight: 600;
+}
+
+/* footer */
+.footer {
+    background-color: #121e3f;
+    color: white;
+}
+
+.col-footer li{
+    list-style-type: circle;
+}
+.footer li{
+    list-style-type: circle;
+    width: 100%;
+    font-size: small;
+}
+.footer a{
+    color: white;
+}
+.col-footer-loc .footNav a{
+    width: 80%;
+    margin: 1px 0;
+}
+.col-footer-loc .footNav a:hover{
+    color: rgb(31, 205, 228);
+}
+
+.col-footer-loc .footer-location .nav-link:hover{
+    color: rgb(31, 205, 228);
+}
+.footer .footer-location i {
+    font-size: 15px;
+    margin-right: 5px;
+}
+.col-footer-social li a{
+    font-size: x-small;
+    text-decoration: none;
+    transition: all .5s ease-in;
+}
+ .col-footer-social li a:hover{
+    transform: scale(1.1);
+}
+.col-footer-social a i{
+    margin-top: 10px;
+    transition: transform .5s ease;
+    font-size: 15px;
+}
+.col-footer-social a i:hover{
+    transform: scale(1.2);
+}
+.copyright { background-color: black; color: white; }
+.copyright .webfooter{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+/* ====================media query===================== */
+
+@media (max-width:1440px) and (min-width:992px){
+    .Support i{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:992px) and (min-width:768px){
+    .Humtek-Technical a h1{ 
+        font-size: 35px;   
+    }
+    .Support i{
+        font-size: 20px;
+    }
+    .solutions p{
+        font-size: 15px;
+    }
+    .solutions ul li{
+        font-size: 15px;
+    }
+}
+@media (max-width:768px) and (min-width:480px){
+    .Humtek-Technical a h1{ 
+        font-size: 25px;   
+    }
+    .Support i{
+        font-size: 10px;
+    }
+    .solutions p{
+        font-size: 10px;
+    }
+    .solutions ul li{
+        font-size: 10px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+}
+
+@media (max-width:480px) and (min-width:320px){
+    .Humtek-Technical a h1{ 
+        font-size: 20px;   
+    }
+    .Support h2{
+        font-size: 17px;
+    }
+    .Support i{
+        font-size: 10px;
+    }
+    .solutions p{
+        font-size: 12px;
+    }
+    .solutions ul li{
+        font-size: 8px;
+    }
+    .copyright{
+        font-size: 6px;
+    }
+}
+@media (max-width:320px){
+    .Humtek-Technical a h1{ 
+        font-size: 15px;   
+    }
+    .Support h2{
+        font-size: 10px;
+    }
+    .Support i{
+        font-size: 8px;
+    }
+    .solutions p{
+        font-size: 8px;
+    }
+    .solutions ul li{
+        font-size: 10px;
+    }
+    .copyright{
+        font-size: 6px;
+    }
+}

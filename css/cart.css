@@ -1,0 +1,221 @@
+
+/* =====================================SVG map styling====================================== */
+.svgcontainer {
+    margin-left: 9rem;
+    width: 80%;
+}
+
+#names{
+    position: absolute;
+    background-color: white;
+    width: 150px;
+    opacity: 0;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 1.5rem;
+}
+
+svg {
+    width: 80%;
+    height: 90vh;
+}
+
+svg path {
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(15, 14, 14);
+    background: linear-gradient(rgba(205, 170, 170, 0.5), rgba(205, 170, 170, 0.5)), url(../models/successfull.jpg) no-repeat;
+    background-size: cover;
+}
+
+.logo span {
+    color: rgb(20, 19, 19);
+}
+.logo h2{
+    font-weight: bolder;
+}
+
+.svgmain h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(17, 17, 19);
+    font-size: 40px;
+    font-weight: 800;
+    background: linear-gradient(rgba(29, 28, 28, 0.5), rgba(29, 28, 28, 0.5)), url(../models/handshake-4011419_1280.jpg) no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: auto;
+}
+
+@media (max-width:1440) and (min-width:992px) {
+    .svgcontainer {
+        margin-left: 5rem;
+        width: 80%;
+    }
+
+    svg {
+        width: 80%;
+        height: 80vh;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+    .svgmain h1 {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    .copyright {
+        background-color: black;
+        color: white;
+    }
+
+    .copyright .webfooter {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        font-size: medium;
+    }
+}
+
+@media (max-width:992px) and (min-width:768px) {
+    .svgcontainer {
+        margin-left: 3rem;
+        width: 80%;
+    }
+
+    svg {
+        width: 100%;
+        height: 80vh;
+    }
+    .logo h2 {
+        font-size: 20px;
+        color: white;
+    }
+
+    .logo span {
+        color: white;
+    }
+
+    .svgmain h1 {
+        font-size: 20px;
+        height: 70px;
+        width: auto;
+    }
+
+    .copyright {
+        background-color: black;
+        color: white;
+    }
+
+    .copyright .webfooter {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:768px) and (min-width:576px) {
+    .svgcontainer {
+        margin-left: 1rem;
+        width: 80%;
+    }
+
+    svg {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(82, 79, 79);
+    }
+
+    .logo h2 {
+        font-size: 15px;
+        color: white;
+    }
+
+    .logo span {
+        color: white;
+    }
+
+    .svgmain h1 {
+        font-size: 15px;
+        height: 50px;
+        width: auto;
+    }
+
+    .copyright {
+        background-color: black;
+        color: white;
+    }
+    .footer .col-footer-social .footer-location {
+        font-size: x-small;
+    }
+
+    .footer .col-footer-social a i {
+        font-size: 8px;
+    }
+    .copyright .webfooter {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        font-size: 9px;
+    }
+    .col-footer-social a i{
+        margin-top: 10px;
+        transition: transform .5s ease;
+        font-size: 7px;
+    }
+}
+
+@media (max-width:576px) {
+    .svgcontainer {
+        margin-left: -20px;
+        width: auto;
+    }
+
+    svg {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .logo h2 {
+        font-size: 15px;
+    }
+    .svgmain h1 {
+        font-size: 15px;
+        height: 50px;
+        width: auto;
+    }
+
+    .col-footer-social a i{
+        margin-top: 10px;
+        transition: transform .5s ease;
+        font-size: 15px;
+    }
+    
+    .copyright {
+        background-color: black;
+        color: white;
+    }
+
+    .copyright .webfooter {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        font-size: 7px;
+    }
+}

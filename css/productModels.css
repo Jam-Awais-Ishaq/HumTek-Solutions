@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+}
+body {
+    overflow-x: hidden;
+    background-color: #e4e3e3;
+}
+/*=========================Technical supports===================== */
+.companyServices {
+    background: linear-gradient(rgba(205, 170, 170, 0.5), rgba(205, 170, 170, 0.5)), url(../models/successfull.jpg) no-repeat;
+    background-size: cover;
+}
+.htsmodels h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(3, 3, 3);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.card-body img {
+    height: 200px;
+    width: 250px;
+    transition: all .5s ease-in-out;
+}
+.card-body img:hover {
+    transform: scale(1.2);
+}
+.card-body h1 {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+}
+.container h2 {
+    font-size: 3rem;
+    font-style: italic;
+    width: fit-content;
+}
+/* ============================Media Qeury================================ */
+@media (max-width:1500px) and (min-width:1200px){
+    .htsmodels h1 {
+        display: flex;
+        justify-content: start;
+        font-size: 1.7rem;
+        width: fit-content;
+    }
+    .card-header{
+        width: fit-content;
+    }
+    .container{
+        width: fit-content;
+    }
+}
+@media (max-width:1200px) and (min-width:992px) {
+    .htsmodels h1 {
+        display: flex;
+        justify-content: start;
+        font-size: 1.7rem;
+    }
+    .card-body .models-images {
+        height: 180px;
+        width: 200px;
+        transition: all .5s ease-in-out;
+    }
+    .container h2 {
+        font-size: 1.5rem;
+        font-style: italic;
+        width: fit-content;
+    }
+
+    .card-body h1 {
+        margin-top: 10px;
+        font-size: 7px;
+        text-align: center;
+    }
+    .card-header{
+        width: fit-content;
+    }
+    .container{
+        width: fit-content;
+    }
+}
+
+@media (max-width:992px) and (min-width:900px) {
+    .htsmodels h1 {
+        display: flex;
+        justify-content: start;
+        font-size: 1.0rem;
+        width: fit-content;
+    }
+    .card-body .models-images {
+        height: 150px;
+        width: 160px;
+        transition: all .5s ease-in-out;
+    }
+    .container h2 {
+        font-size: 1.0rem;
+        font-style: italic;
+        width: fit-content;
+    }
+
+    .card-body h1 {
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .card-header{
+        width: fit-content;
+    }
+    .container{
+        width: fit-content;
+    }
+}
+@media (max-width:900px) and (min-width:768px){
+    .htsmodels h1 {
+        font-size: 16px;
+        width: fit-content;
+    }
+    .card-body .models-images {
+        height: 100px;
+        width: 100px;
+        display: block;
+    }
+    .container h2 {
+        font-size: 1.2rem;
+        font-style: italic;
+        width: fit-content;
+    }
+    .card-body h1 {
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: center;
+        width: fit-content;
+    }
+    .card-header{
+        font-size:10px;
+        width: fit-content;
+    }
+}
+
+@media (max-width:768px) and (min-width:576px){
+    .htsmodels h1 {
+        font-size: 20px;
+    }
+    .card-body .models-images {
+        height: 145px;
+        width: 180px;
+    }
+    .col-md-3 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .container h2 {
+        font-size: 1.2rem;
+        font-style: italic;
+    }
+    .card-header .notBinder {
+        font-size: xx-small;
+    }
+    .card-body h1 {
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: center;
+        width: fit-content;
+    }
+    .card-header{
+        font-size:7px;
+        width: fit-content;
+    }
+    .card-body img:hover {
+        transform: scale(.9);
+    }
+}
+
+@media (max-width:576px) and (min-width:480px){
+    body{
+    background-color: white;
+    }
+    .companyServices{
+        display: none;
+    }
+    .htsmodels h1 {
+        font-size: 18px;
+    }
+    .card-body .models-images {
+        height: 200px;
+        width: 200px;
+    }
+    .col-md-3 {
+        display: block;
+    }
+    .container h2 {
+        font-size: .8rem;
+        font-style: italic;
+    }
+    .card-header .notBinder {
+        font-size:6px;
+    }
+    .card{
+        border: transparent;
+        margin-left: 2rem;
+    }
+    .card-body h1 {
+        font-size: 10px;
+        text-align: center;     
+    }
+    .card-header{
+        font-size:7px;
+        width: fit-content;
+        background-color: transparent;
+        border-bottom: 1px solid black;
+    }
+    .card-body img{
+        margin-left: 8rem;
+    }
+    .card-body img:hover {
+        transform: scale(.9);
+    }
+    .productfooter{
+        display: none;
+    }
+}
+@media (max-width:480px) and (min-width:320px){
+    body{
+        background-color: white;
+        overflow-x: hidden;
+    }
+    .companyServices{
+        display: none;
+    }
+    .col-md-3{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .card,.card-header{
+        border: transparent;
+        background-color: transparent;
+    }
+    .card-body .models-images {
+        height: 105px;
+        width: 130px;
+    }
+    .container h2{
+        font-size: 1.2rem;
+        color: red;
+    }
+    .card-header .notBinder {
+        font-size: xx-small;
+    }
+    .card-body h1 {
+        margin-top: 10px;
+        text-align: center;
+        width: fit-content;
+    }
+    .card-header{
+        font-size:7px;
+        width: fit-content;
+    }
+    .card-body img:hover {
+        transform: scale(.9);
+    }
+}
