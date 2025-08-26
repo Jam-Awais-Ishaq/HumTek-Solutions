@@ -2,7 +2,7 @@
 
 **Humtek Solutions** is a reliable 🇵🇰 **Backing Machine Service Provider** based in **Karachi, Pakistan**.
 
-📍 **Location:** A-396, Block-7 K.A.E.C.H society karachi  
+📍 **Location:** A-396, Block-7 K.A.E.C.H.S society karachi  
 ⚙️ We specialize in:
 - 🧰 Installation of industrial backing machines  
 - 🔧 Maintenance & repair services  
